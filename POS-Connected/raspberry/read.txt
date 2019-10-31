@@ -1,0 +1,21 @@
+5기_자율주행 코드 분석
+
+<PMW_rasberrypi 폴더>
+- 라즈베리파이에 심는 코드
+
+- main.py : 모든 프로그램 실행 총괄 
+import server_connect  
+# main.py와 같은 폴더에 있는 server_connect.py 파일 => 인스턴스 생성하여 socket에 연결?
+server_socket = server_connect.Connect(HOST, PORT) => 연결할 server의 HOST와 연결 port를 설정한 후 
+
+
+
+
+import rasp_serial
+import Camera
+import threading
+# import ultrasonic
+# import mic
+import time
+
+# target은 쓰레드로 돌릴 함수를 의미
